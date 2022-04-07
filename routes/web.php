@@ -13,8 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+//     //return "Hello world";
+//     //return ['foo' => 'bar']; //spits out josn
+// });
+
 Route::get('/', function () {
-    return view('welcome');
-    //return "Hello world";
-    //return ['foo' => 'bar']; //spits out josn
+    return view('posts');
 });
+
+Route::get('post', function() {
+    return view('post');
+});
+
